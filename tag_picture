@@ -1,0 +1,21 @@
+### `<picture>` 태그란?
+
+- CSS없이 해당 뷰포트에 알맞게 여러 개의 이미지 중에서 적절한 이미지를 사용할 수 있도록 해주는 태그.
+
+```html
+<picture>
+    <source media="(min-width: 700px)" srcset="/examples/images/people_960.jpg">
+    <source media="(min-width: 400px)" srcset="/examples/images/people_575.jpg">
+    <img src="/examples/images/people_200.jpg" alt="People">
+</picture>
+```
+
+- 0개 이상의 `<source>` 요소와 하나의 `<img>` 요소로 구성, 브라우저는 `<source>` 중에서 해당 뷰포트와 가장 잘 어울리는 `<source>` 요소를 다음 과정을 통해서 찾음.
+    1. 브라우저는 `<source>` 요소들의 속성값을 각각 확인해 나가며 조건을 만족하는 첫 번째 `<source>` 요소를 사용, 나머지 `<source>` 요소들은 무시
+    2. 모든 조건을 만족하지 못 할 경우 `<img>` 태그 사용. 또한 `<picture>` 요소를 지원하지 않는 브라우저를 위해 사용
+
+### 장점
+
+- HTML 태그 구현만으로 반응형 이미지 파일이 로딩되며, 웹 브라우저 너비 변화에 맞춰 동적으로 이미지 너비 또한 변경.
+- 이미지를 위한 CSS 미디어쿼리를 추가로 작성해서 반응형 웹을 관리할 필요가 없음.
+- CSS 미디어쿼리로 이미지를 관리하는 것보다 간결하며 이미지 로딩 속도가 더 빠름. (당연하지만 자바스크립트로 비동기 이미지를 관리하는 것보다 훨씬 더 빠름)
