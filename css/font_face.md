@@ -14,22 +14,22 @@
 @font-face {
   font-family:'coolfont';
 	src: local('coolfont'),  
-    url(../font/coolfont-B.eot#iefix) format("embedded-opentype"),
-    url("../font/coolfont-B.woff2") format('woff2'),
-    url("../font/coolfont-B.woff") format('woff'),
-		url("../font/coolfont-B.otf") format('opentype'),
-		url("../font/coolfont-B.ttf") format('truetype');
+    	url(../font/coolfont-B.eot#iefix) format("embedded-opentype"),
+    	url("../font/coolfont-B.woff2") format('woff2'),
+    	url("../font/coolfont-B.woff") format('woff'),
+	url("../font/coolfont-B.otf") format('opentype'),
+	url("../font/coolfont-B.ttf") format('truetype');
   font-weight:500;
   font-style:normal; 
 }
 @font-face {
   font-family:'coolfont';
 	src: local('coolfont'),
-    url(../font/coolfont-B.eot#iefix) format("embedded-opentype"),
-    url("../font/coolfont-B.woff2") format('woff2'),
-    url("../font/coolfont-B.woff") format('woff'),
-		url("../font/coolfont-B.otf") format('opentype'),
-		url("../font/coolfont-B.ttf") format('truetype');
+    	url(../font/coolfont-B.eot#iefix) format("embedded-opentype"),
+    	url("../font/coolfont-B.woff2") format('woff2'),
+    	url("../font/coolfont-B.woff") format('woff'),
+	url("../font/coolfont-B.otf") format('opentype'),
+	url("../font/coolfont-B.ttf") format('truetype');
   font-weight:500;
   font-style:normal; 
 }
